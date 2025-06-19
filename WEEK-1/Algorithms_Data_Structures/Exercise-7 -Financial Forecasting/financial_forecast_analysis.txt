@@ -1,0 +1,22 @@
+Use Case:
+To predict future investment value based on consistent annual growth.
+
+Recursive Formula:
+FV(n) = FV(n-1) × (1 + r)
+
+Where:
+- FV = Future Value
+- r = growth rate
+- n = number of years
+
+Suitable for:
+- Small to medium year ranges
+- Simple growth forecasting
+
+Not suitable for:
+- Large year values (due to stack overflow risk)
+- Dynamic or varying growth rates
+
+Recommendation:
+1. Use recursion for educational clarity or small-scale apps
+2. Use loop/memoization for production-level systems

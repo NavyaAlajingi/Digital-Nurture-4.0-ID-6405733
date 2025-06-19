@@ -1,0 +1,12 @@
+Use Linear Search:
+- When the dataset is small or frequently changing
+- When sorting is not possible or not worth the effort
+- For simple one-time searches
+
+Use Binary Search:
+- When working with large, sorted datasets
+- For read-heavy applications where search speed matters
+- Only after ensuring the data is sorted (e.g., using indexes or TreeMap)
+
+Bonus:
+- For ultra-fast lookups by ID → consider using HashMap (O(1) time)

@@ -1,0 +1,15 @@
+Understanding Recursive Algorithms:
+
+Recursion is a technique where a method calls itself to solve a smaller version of the original problem. 
+It is especially useful in problems that have a clear repetitive structure, like financial forecasting, factorials, tree traversals, etc.
+
+In this example, the future value of money is calculated recursively:
+- Base Case: If years = 0, return the initial amount.
+- Recursive Case: FV = previous year's amount × (1 + growthRate)
+
+Time Complexity:
+- Recursive function runs once for each year → O(n), where n = number of years.
+
+Optimization:
+- If future values are requested repeatedly (for multiple years), store results using memoization to avoid recalculating.
+- Alternatively, use an iterative version for better space efficiency (no stack calls).
